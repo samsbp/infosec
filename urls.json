@@ -4,6 +4,26 @@
       [
         "https://www.youtube.com/channel/UCPK_UHtbfcWABCi0F0GPG6w/videos",
         "vimconf-2020"
+      ],
+      [
+        "https://www.youtube.com/watch\\?v\\=g4dXZ0RQWdw",
+        "neovim in vscode"
+      ]
+    ]
+  },
+  "crypto": {
+    "default": [
+      [
+        "https://crackstation.net/",
+        "decode hashes"
+      ]
+    ]
+  },
+  "web": {
+    "sqlmap": [
+      [
+        "https://abrictosecurity.com/blog/sqlmap-cheatsheet-and-examples/",
+        "cheatsheet"
       ]
     ]
   }

@@ -19,9 +19,9 @@ class Git:
         process = subprocess.run(['git','add','.'], check=True, stdout=subprocess.PIPE, universal_newlines=True)
         Constants.logger("gid add .")
         process = subprocess.run(['git','commit','-m','update'], check=True, stdout=subprocess.PIPE, universal_newlines=True)
-        Constants.logger(process)
+        Constants.logger("git commit -m update")
         process = subprocess.run(['git','push'], check=True, stdout=subprocess.PIPE, universal_newlines=True)
-
+        Constants.logger("git push")
 
 
 class Engine:

@@ -1,7 +1,10 @@
 {
-  "linux": {
-    "default": [
-      "http://url"
+  "vim": {
+    "youtube": [
+      [
+        "https://www.youtube.com/channel/UCPK_UHtbfcWABCi0F0GPG6w/videos",
+        "vimconf-2020"
+      ]
     ]
   }
 }

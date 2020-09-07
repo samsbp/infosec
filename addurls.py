@@ -44,6 +44,7 @@ class Engine:
         parser.add_argument("-fs", "--fstream", help="file stream [stdin|file]")
         parser.add_argument("-fj", "--fjson", help="json file stream [file]")
         parser.add_argument("-sj", "--sjson", help="save json in -fj", action="store_true")
+        parser.add_argument("-push", "--gitpush", help="push to remote", action="store_true")
         self.args = parser.parse_args()
 
 
@@ -62,19 +63,34 @@ class Engine:
             for line in lines:
                 print(line)
                 line = line.replace('\n','')
-                url,category,subCategory = line.split(',')
+                url,desc,category,subCategory = line.split(',')
                 if(category in self.data.keys()):
-                    self.data[category][subCategory].append(url)
+                    if(subCategory in self.data[category].keys()):
+                        urldesc=[]
+                        urldesc.append(url)
+                        urldesc.append(desc)
+                        self.data[category][subCategory].append(urldesc)
+                    else:
+                        self.data[category][subCategory]=[]
+                        urldesc=[]
+                        urldesc.append(url)
+                        urldesc.append(desc)
+                        self.data[category][subCategory].append(urldesc)
+
 
                 else:
                     self.data[category]={}
                     self.data[category][subCategory]=[]
-                    self.data[category][subCategory].append(url)
+                    urldesc=[]
+                    urldesc.append(url)
+                    urldesc.append(desc)
+                    self.data[category][subCategory].append(urldesc)
 
         if(self.args.sjson):
             self.saveJSON()
             self.convertToMD()
-            Git.uploadFiles()
+            if(self.args.gitpush):
+                Git.uploadFiles()
 
     def saveJSON(self):
         with open(self.args.fjson,'w') as dumpFile:
@@ -86,7 +102,11 @@ class Engine:
             for subCategory in self.data[category].keys():
                 mdFile.write("\n\n"+Markdown.header+subCategory+"\n\n")
                 for url in self.data[category][subCategory]:
-                    mdFile.write(Markdown.link.format(desc=url,url=url))
+                    if(url[1]==" "):
+                        mdFile.write(Markdown.link.format(desc=url[0],url=url[0])+"\n\n")
+                    else:
+                        mdFile.write(Markdown.link.format(desc=url[0],url=url[0])+" - "+url[1]+"\n\n")
+
 
     def printData(self):
         Constants.logger("printing urls format:[category:[subCategory:[urls,urls]]]")

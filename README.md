@@ -11,7 +11,7 @@ install the necessary packages
 
 To add urls to the repo, issue this cmd 
 
-```./url "<url>,<description about the url if any>,<category>,<sub-category>" -push```
+```./url "url,description about the url if any or else give a space,category,sub-category" -push```
 
  it will add the url to the json and recreate all the md files according to category and push it the repo.
  

@@ -64,6 +64,10 @@ class Engine:
                 print(line)
                 line = line.replace('\n','')
                 url,desc,category,subCategory = line.split(',')
+                url=url.strip()
+                desc=desc.strip()
+                category=category.strip()
+                subCategory=subCategory.strip()
                 if(category in self.data.keys()):
                     if(subCategory in self.data[category].keys()):
                         urldesc=[]

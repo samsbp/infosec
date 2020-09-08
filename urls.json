@@ -35,6 +35,12 @@
         "https://abrictosecurity.com/blog/sqlmap-cheatsheet-and-examples/",
         "cheatsheet"
       ]
+    ],
+    "default": [
+      [
+        "https://portswigger.net/web-security",
+        "web security learning"
+      ]
     ]
   },
   "linux": {
@@ -64,6 +70,14 @@
       [
         "https://gtfobins.github.io/",
         "linux privilege escalation"
+      ]
+    ]
+  },
+  "re": {
+    "radare2": [
+      [
+        "https://artik.blue/reversing",
+        "reversing course with r2"
       ]
     ]
   }

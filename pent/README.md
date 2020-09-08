@@ -6,5 +6,3 @@
 
 [https://gtfobins.github.io/](https://gtfobins.github.io/) - linux privilege escalation
 
-[https://gtfobins.github.io/](https://gtfobins.github.io/) - linux privilege escalation
-

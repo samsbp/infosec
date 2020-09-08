@@ -66,5 +66,13 @@
         "linux privilege escalation"
       ]
     ]
+  },
+  "re": {
+    "radare2": [
+      [
+        "https://artik.blue/reversing",
+        "reversing course with r2"
+      ]
+    ]
   }
 }

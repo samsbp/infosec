@@ -88,5 +88,13 @@
         "README.md addurls.py crypto linux pent pwn re requirements.txt url urls.json vim web great resource (pwn android rev web)"
       ]
     ]
+  },
+  "java": {
+    "RE": [
+      [
+        "https://github.com/Col-E/Recaf",
+        "A modern Java bytecode editor"
+      ]
+    ]
   }
 }

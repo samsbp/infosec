@@ -110,5 +110,13 @@
         "java RE tool"
       ]
     ]
+  },
+  "fuzzer": {
+    "ctf": [
+      [
+        "https://rode0day.mit.edu/",
+        "fuzzer competition"
+      ]
+    ]
   }
 }

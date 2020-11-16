@@ -6,3 +6,9 @@
 
 [https://github.com/merrychap/shellen](https://github.com/merrychap/shellen) - interactive shellcoding
 
+
+
+## course
+
+[https://github.com/RPISEC/MBE](https://github.com/RPISEC/MBE) - Modern Binary Exploitation
+

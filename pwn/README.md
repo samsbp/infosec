@@ -12,3 +12,5 @@
 
 [https://github.com/RPISEC/MBE](https://github.com/RPISEC/MBE) - Modern Binary Exploitation
 
+[https://tc.gts3.org/cs6265/2020-spring/tut/tut01-warmup1.html](https://tc.gts3.org/cs6265/2020-spring/tut/tut01-warmup1.html) - binary and RE materials
+

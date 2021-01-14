@@ -132,5 +132,13 @@
         "fuzzer competition"
       ]
     ]
+  },
+  "websites": {
+    "default": [
+      [
+        "http://wiki.ioin.in/",
+        "infosec links"
+      ]
+    ]
   }
 }

@@ -8,6 +8,8 @@
 
 [https://0xax.gitbooks.io/linux-insides/content/](https://0xax.gitbooks.io/linux-insides/content/) - Good content on linux kernel insides
 
+[https://www.kernel.org/doc/ols/2007/ols2007v1-pages-215-224.pdf](https://www.kernel.org/doc/ols/2007/ols2007v1-pages-215-224.pdf) - tracing types in linux
+
 
 
 ## default

@@ -10,6 +10,7 @@
 
 [https://www.kernel.org/doc/ols/2007/ols2007v1-pages-215-224.pdf](https://www.kernel.org/doc/ols/2007/ols2007v1-pages-215-224.pdf) - tracing types in linux
 
+[https://github.com/xairy/linux-kernel-exploitation](https://github.com/xairy/linux-kernel-exploitation) - kernel exploitation
 
 
 ## default
